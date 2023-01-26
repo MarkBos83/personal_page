@@ -1,0 +1,95 @@
+{
+    "userdata": [
+        {
+            "account": {
+                "username": "MarkBos",
+                "password": "yoyo",
+                "email": "MarkBosCKV@gmail.com",
+                "avatar": "",
+                "birthdate": "20/05/2000"
+            },
+            "task": [
+                {
+                    "name": "Eindopdracht afmaken",
+                    "category": "school",
+                    "deadlineDate": "02/02/2023",
+                    "deadlineTime": "16:00",
+                    "state": "in progress",
+                    "Accountusername": "MarkBos"
+                },
+                {
+                    "name": "kamer stofzuigen",
+                    "category": "home",
+                    "deadlineDate": "",
+                    "deadlineTime": "",
+                    "state": "done",
+                    "Accountusername": "MarkBos"
+                },
+                {
+                    "name": "de 6a boulder doen",
+                    "category": "social",
+                    "deadlineDate": "",
+                    "deadlineTime": "",
+                    "state": "in progress",
+                    "Accountusername": "MarkBos"
+                },
+                {
+                    "name": "ssl halen",
+                    "category": "misc",
+                    "deadlineDate": "",
+                    "deadlineTime": "",
+                    "state": "in progress",
+                    "Accountusername": "MarkBos"
+                },
+                {
+                    "name": "slagen",
+                    "category": "school",
+                    "deadlineDate": "",
+                    "deadlineTime": "",
+                    "state": "in progress",
+                    "Accountusername": "MarkBos"
+                }
+            ],
+            "clicks": [
+                {
+                    "ID": "1",
+                    "amountOfClicks": "32",
+                    "accountusername": "MarkBos",
+                    "websitename": "Opera GX"
+                },
+                {
+                    "ID": "2",
+                    "amountOfClicks": "13",
+                    "accountusername": "MarkBos",
+                    "websitename": "Instagram"
+                },
+                {
+                    "ID": "3",
+                    "amountOfClicks": "118",
+                    "accountusername": "MarkBos",
+                    "websitename": "VisualStudioCode"
+                }
+            ]
+        }
+    ],
+    "website": [
+        {
+            "name": "Opera GX",
+            "URL": "",
+            "description": "internet browser",
+            "icon": ""
+        },
+        {
+            "name": "Instagram",
+            "URL": "",
+            "description": "Social media platform",
+            "icon": ""
+        },
+        {
+            "name": "VisualStudioCode",
+            "URL": "",
+            "description": "Coding program",
+            "icon": ""
+        }
+    ]
+}

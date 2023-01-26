@@ -5,9 +5,177 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: lightgray;
+  overflow: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+header{
+  height: 15vh;
+  width: 100%;
+  background-image: url(img/background_image_header.webp);
+  background-size: cover;
+}
+
+ul {
+  list-style: none;
+  padding: 24px;
+}
+
+li > *{
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 0.8em;
+}
+li > * img {
+  height: 10px;
+}
+li{
+  padding-bottom: 12px;
+}
+
+.navigation {
+  position: fixed;
+  background-color: white;
+  height: 94vh;
+  width: 25vh;
+  margin: 24px;
+  margin-top: -84px;
+  border-radius: 20px;
+}
+h2, h3{
+  margin: 0;
+}
+a{
+  color: rgb(128, 128, 128);
+  font-weight: 600;
+}
+.logo img {
+  width: 120px;
+  padding-top: 24px;
+}
+.logo {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.navigation ul li a.active {
+  color: black;
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+.loremlogo img{
+  height: 25px;
+}
+.loremlogo{
+  padding: 28px 0;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.8em;
+}
+
+.datetime{
+  position: relative;
+  text-align: right;
+  vertical-align: middle;
+  font-weight: 900;
+  line-height: 95px;
+}
+
+#time{
+  padding: 0 24px;
+  font-size: 2em;
+}
+
+#date{
+  font-size: 1.2em;
+}
+
+.marg{
+  margin-left: 250px;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  height: 70vh;
+  width: 90%;
+  gap: 24px;
+}
+
+.grid-item{
+  border-radius: 24px;
+  background-color: white;
+}
+
+.grid-item__one{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+.grid-item__two{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.grid-item__three{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+.my-tasks{
+  height: 470px;
+  width: calc(100%-12px);
+  padding: 12px;
+}
+
+.flex{
+  display: flex;
+}
+
+a.active{
+  color: black;
+  text-decoration: underline;
+  background-color: lightgray;
+  border-radius: 30px;
+  padding: 2px 8px;
+  font-weight: 900;
+}
+
+.flex a{
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.task{
+  height: 15vh;
+  margin: 12px 0;
+  border-style: solid;
+  border-radius: 14px;
+  padding: 8px;
+}
+
+.singleTasks{
+  height: 430px;
+  width: calc(100%-12px);
+  margin-right: -10px;
+  padding-right: 8px;
+}
+
+.dashboard-overflow{
+  overflow: hidden;
+}
+.tasks-overflow{
+  overflow: auto;
 }
