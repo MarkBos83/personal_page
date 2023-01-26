@@ -14,7 +14,7 @@ code {
     monospace;
 }
 
-header{
+header {
   height: 15vh;
   width: 100%;
   background-image: url(img/background_image_header.webp);
@@ -26,16 +26,18 @@ ul {
   padding: 24px;
 }
 
-li > *{
+li>* {
   text-decoration: none;
   color: black;
   font-weight: 700;
   font-size: 0.8em;
 }
-li > * img {
+
+li>* img {
   height: 10px;
 }
-li{
+
+li {
   padding-bottom: 12px;
 }
 
@@ -48,17 +50,22 @@ li{
   margin-top: -84px;
   border-radius: 20px;
 }
-h2, h3{
+
+h2,
+h3 {
   margin: 0;
 }
-a{
+
+a {
   color: rgb(128, 128, 128);
   font-weight: 600;
 }
+
 .logo img {
   width: 120px;
   padding-top: 24px;
 }
+
 .logo {
   text-align: center;
   padding-bottom: 20px;
@@ -70,17 +77,18 @@ a{
   font-weight: 900;
 }
 
-.loremlogo img{
+.loremlogo img {
   height: 25px;
 }
-.loremlogo{
+
+.loremlogo {
   padding: 28px 0;
   text-align: center;
   font-weight: 900;
   font-size: 1.8em;
 }
 
-.datetime{
+.datetime {
   position: relative;
   text-align: right;
   vertical-align: middle;
@@ -88,20 +96,20 @@ a{
   line-height: 95px;
 }
 
-#time{
+#time {
   padding: 0 24px;
   font-size: 2em;
 }
 
-#date{
+#date {
   font-size: 1.2em;
 }
 
-.marg{
+.marg {
   margin-left: 250px;
 }
 
-.grid-container{
+.grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(5, 1fr);
@@ -110,41 +118,43 @@ a{
   gap: 24px;
 }
 
-.grid-item{
+.grid-item {
   border-radius: 24px;
   background-color: white;
 }
 
-.grid-item__one{
+.grid-item__one {
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 1;
   grid-row-end: 6;
 }
-.grid-item__two{
+
+.grid-item__two {
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 3;
 }
-.grid-item__three{
+
+.grid-item__three {
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 6;
 }
 
-.my-tasks{
+.my-tasks {
   height: 470px;
   width: calc(100%-12px);
   padding: 12px;
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
-a.active{
+a.active {
   color: black;
   text-decoration: underline;
   background-color: lightgray;
@@ -153,29 +163,51 @@ a.active{
   font-weight: 900;
 }
 
-.flex a{
+.flex a {
   font-weight: 600;
   margin-right: 20px;
 }
 
-.task{
-  height: 15vh;
+.task {
+  height: 12vh;
   margin: 12px 0;
   border-style: solid;
   border-radius: 14px;
   padding: 8px;
 }
 
-.singleTasks{
-  height: 430px;
+.singleTasks {
+  height: 360px;
   width: calc(100%-12px);
   margin-right: -10px;
   padding-right: 8px;
 }
 
-.dashboard-overflow{
+.dashboard-overflow {
   overflow: hidden;
 }
-.tasks-overflow{
+
+.tasks-overflow {
   overflow: auto;
+}
+
+.blue {
+  color: blue;
+  text-decoration: none;
+  position: relative;
+  left: 24px;
+}
+
+.addTasks {
+  width: 100%;
+  text-align: center;
+}
+
+.addTasks button {
+  padding: 2px 20px;
+  border-radius: 9999px;
+  background-color: black;
+  font-size: 2.5em;
+  font-weight: 900;
+  color: white;
 }

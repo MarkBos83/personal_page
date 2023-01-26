@@ -1,17 +1,9 @@
 import React from 'react';
 
-class FinishedTasks extends React.Component {
+export default function FinishedTasks(props) {
+    return (
+        <>
 
-
-
-
-    render() {
-        return (
-            <>
-
-            </>
-        )
-    }
+        </>
+    )
 }
-
-export default FinishedTasks;

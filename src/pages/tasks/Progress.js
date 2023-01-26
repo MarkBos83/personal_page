@@ -1,17 +1,9 @@
 import React from 'react';
 
-class Progress extends React.Component {
+export default function Progress(props) {
+    return (
+        <>
 
-
-
-
-    render() {
-        return (
-            <>
-
-            </>
-        )
-    }
+        </>
+    )
 }
-
-export default Progress;

@@ -1,19 +1,15 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import MyTasks from './tasks/Mytasks'
 
-class Dashboard extends React.Component {
-
-
-
-
-    render() {
-        return (
-            <div className='marg'>
-                <h1>Dashboard</h1>
-                <div className='grid-container'>  
+export default function Dashboard(props) {
+    return (
+        <div className='marg'>
+            <h1>Dashboard</h1>
+            <div className='grid-container'>
                 <div className='grid-item__one grid-item'>
-                    <MyTasks id="Dashboard" class="dashboard-overflow"/>
+                    <MyTasks id="Dashboard" class="dashboard-overflow" seeAll={<NavLink className='blue' to={"/tasks/all"}>see all...</NavLink>}/>
                 </div>
                 <div className='grid-item__two grid-item'>
 
@@ -22,9 +18,6 @@ class Dashboard extends React.Component {
 
                 </div>
             </div>
-            </div>
-        )
-    }
+        </div>
+    )
 }
-
-export default Dashboard;

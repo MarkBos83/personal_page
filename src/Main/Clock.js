@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-function Clock() {
+export default function Clock() {
     const [date, setDate] = useState(new Date());
 
     function refreshClock() {
@@ -19,4 +19,3 @@ function Clock() {
         </>
     );
 }
-export default Clock;
