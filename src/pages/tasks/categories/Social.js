@@ -3,9 +3,16 @@ import React from 'react';
 import SingleTask from './SingleTask'
 
 export default function Social(props) {
+
+    function noTasks(){
+        if (props.tasks.filter(task => task.category === 'social').filter(task => task.state !== 'done').length===0){
+            return (<p className='noTasks'>no tasks of category 'social'</p>)
+        }
+    }
+
     return (
         <div className='tasks'>
-            {props.tasks.filter(task => task.category === 'social').map((task, index) =>
+            {props.tasks.filter(task => task.category === 'social').filter(task => task.state !== 'done').map((task, index) =>
                 <SingleTask
                     index={index}
                     deadlineDate={task.deadlineDate}
@@ -13,8 +20,16 @@ export default function Social(props) {
                     name={task.name}
                     category={task.category}
                     key={index}
+                    donefunc={props.donefunc}
+                    showMenu={props.showMenu} 
+                    setShowMenu={props.setShowMenu} 
+                    handleOutsideClick={props.handleOutsideClick} 
+                    deleteTask={props.deleteTask} 
+                    tasks={props.tasks}
+                    setTasks={props.setTasks}
                 />
             )}
+            {noTasks()}
         </div>
     )
 }

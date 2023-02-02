@@ -135,6 +135,7 @@ a {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 3;
+  background-color: bisque;
 }
 
 .grid-item__three {
@@ -174,6 +175,9 @@ a.active {
   border-style: solid;
   border-radius: 14px;
   padding: 8px;
+  position: relative;
+  width: 95%;
+  margin: 6px;
 }
 
 .singleTasks {
@@ -203,11 +207,106 @@ a.active {
   text-align: center;
 }
 
-.addTasks button {
+.addTasksButton {
   padding: 2px 20px;
   border-radius: 9999px;
   background-color: black;
   font-size: 2.5em;
   font-weight: 900;
   color: white;
+}
+
+button:hover{
+  cursor:pointer
+}
+
+.progress{
+  width: 100%;
+  height: 100%;
+  padding: 6px 12px;
+}
+
+.progressblock{
+  margin: 20px;
+  height: 55%;
+  width: 25%;
+  border-radius: 20px;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 10px gray;
+}
+
+.hw{
+  height: 100%;
+  width: 100%;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.bold{
+  font-weight: 900;
+  font-size: 1.8em;
+}
+
+.progresstext{
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.background-white{
+  background-color: white;
+}
+
+.finishedTask {
+  position: relative;
+  height: 48px;
+  border-style: solid;
+  border-radius: 14px;
+  padding: 8px;
+  margin: 10px;
+  margin-left: 0;
+}
+
+.task input[type='checkbox'] {
+  position: absolute;
+  bottom: 10px;
+  right: 12px;
+  width: 30px;
+  height: 30px;
+}
+
+.finishedTask input[type='checkbox'] {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 20px;
+  height: 20px;
+}
+
+.finishedTasks{
+  margin: 12px;
+}
+
+.finishedTasks-overflow{
+  height: 245px;
+  overflow: auto;
+}
+
+.noTasks{
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.tasks{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

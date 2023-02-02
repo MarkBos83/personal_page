@@ -10,86 +10,151 @@
             },
             "task": [
                 {
-                    "name": "Eindopdracht afmaken",
-                    "category": "school",
-                    "deadlineDate": "02/02/2023",
+                    "name": "Submit English essay",
+                    "deadlineDate": "2023-02-03",
+                    "deadlineTime": "23:59",
+                    "state": "in progress",
+                    "category": "school"
+                },
+                {
+                    "name": "Do the laundry",
+                    "deadlineDate": "2023-02-02",
+                    "deadlineTime": "19:00",
+                    "state": "in progress",
+                    "category": "home"
+                },
+                {
+                    "name": "Call grandma",
+                    "deadlineDate": "2023-03-17",
+                    "deadlineTime": "20:00",
+                    "state": "in progress",
+                    "category": "social"
+                },
+                {
+                    "name": "Buy groceries",
+                    "deadlineDate": "2023-02-02",
+                    "deadlineTime": "12:00",
+                    "state": "in progress",
+                    "category": "misc"
+                },
+                {
+                    "name": "Attend meeting with boss",
+                    "deadlineDate": "2023-02-02",
+                    "deadlineTime": "14:00",
+                    "state": "in progress",
+                    "category": "misc"
+                },
+                {
+                    "name": "Work on presentation",
+                    "deadlineDate": "2023-03-15",
                     "deadlineTime": "16:00",
                     "state": "in progress",
-                    "Accountusername": "MarkBos"
+                    "category": "misc"
                 },
                 {
-                    "name": "kamer stofzuigen",
-                    "category": "home",
-                    "deadlineDate": "25/01/2023",
-                    "deadlineTime": "",
-                    "state": "done",
-                    "Accountusername": "MarkBos"
-                },
-                {
-                    "name": "de 6a boulder doen",
-                    "category": "social",
-                    "deadlineDate": "",
-                    "deadlineTime": "",
+                    "name": "Book a doctor's appointment",
+                    "deadlineDate": "2023-02-25",
+                    "deadlineTime": "10:00",
                     "state": "in progress",
-                    "Accountusername": "MarkBos"
+                    "category": "home"
                 },
                 {
-                    "name": "ssl halen",
-                    "category": "misc",
-                    "deadlineDate": "",
-                    "deadlineTime": "",
+                    "name": "Buy birthday present for friend",
+                    "deadlineDate": "2023-02-20",
+                    "deadlineTime": "17:00",
                     "state": "in progress",
-                    "Accountusername": "MarkBos"
+                    "category": "social"
                 },
                 {
-                    "name": "slagen",
-                    "category": "school",
-                    "deadlineDate": "",
-                    "deadlineTime": "",
+                    "name": "Return library books",
+                    "deadlineDate": "2023-03-30",
+                    "deadlineTime": "18:00",
                     "state": "in progress",
-                    "Accountusername": "MarkBos"
+                    "category": "school"
+                },
+                {
+                    "name": "Study for final exams",
+                    "deadlineDate": "2023-05-15",
+                    "deadlineTime": "23:59",
+                    "state": "in progress",
+                    "category": "school"
+                },
+                {
+                    "name": "Plan a birthday party",
+                    "deadlineDate": "2023-06-20",
+                    "deadlineTime": "20:00",
+                    "state": "in progress",
+                    "category": "social"
+                },
+                {
+                    "name": "Clean the house",
+                    "deadlineDate": "2023-07-01",
+                    "deadlineTime": "12:00",
+                    "state": "in progress",
+                    "category": "home"
+                },
+                {
+                    "name": "File taxes",
+                    "deadlineDate": "2023-04-15",
+                    "deadlineTime": "17:00",
+                    "state": "in progress",
+                    "category": "misc"
+                },
+                {
+                    "name": "Organize garage sale",
+                    "deadlineDate": "2023-05-30",
+                    "deadlineTime": "09:00",
+                    "state": "in progress",
+                    "category": "misc"
+                },
+                {
+                    "name": "Host a dinner party",
+                    "deadlineDate": "2023-06-10",
+                    "deadlineTime": "19:00",
+                    "state": "in progress",
+                    "category": "social"
                 }
             ],
             "clicks": [
                 {
                     "ID": "1",
-                    "amountOfClicks": "32",
+                    "amountOfClicks": "0",
                     "accountusername": "MarkBos",
-                    "websitename": "Opera GX"
+                    "websitename": "Google"
                 },
                 {
                     "ID": "2",
-                    "amountOfClicks": "13",
+                    "amountOfClicks": "0",
                     "accountusername": "MarkBos",
-                    "websitename": "Instagram"
+                    "websitename": "Facebook"
                 },
                 {
                     "ID": "3",
-                    "amountOfClicks": "118",
+                    "amountOfClicks": "0",
                     "accountusername": "MarkBos",
-                    "websitename": "VisualStudioCode"
+                    "websitename": "Twitter"
                 }
             ]
         }
     ],
     "website": [
         {
-            "name": "Opera GX",
-            "URL": "",
-            "description": "internet browser",
-            "icon": ""
+            "name": "Google",
+            "url": "https://www.google.com",
+            "description": "Search engine and technology company",
+            "icon": "https://www.google.com/favicon.ico"
         },
         {
-            "name": "Instagram",
-            "URL": "",
-            "description": "Social media platform",
-            "icon": ""
+            "name": "Facebook",
+            "url": "https://www.facebook.com",
+            "description": "Social networking platform",
+            "icon": "https://www.facebook.com/favicon.ico"
         },
         {
-            "name": "VisualStudioCode",
-            "URL": "",
-            "description": "Coding program",
-            "icon": ""
+            "name": "Twitter",
+            "url": "https://www.twitter.com",
+            "description": "Microblogging and social networking service",
+            "icon": "https://www.twitter.com/favicon.ico"
         }
     ]
 }

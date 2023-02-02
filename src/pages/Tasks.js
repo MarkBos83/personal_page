@@ -10,13 +10,21 @@ export default function Tasks(props) {
             <h1>Tasks</h1>
             <div className='grid-container'>
                 <div className='grid-item__one grid-item'>
-                    <MyTasks id="Tasks" class="tasks-overflow" />
+                    <MyTasks id="Tasks" class="tasks-overflow" tasks={props.tasks} setTasks={props.setTasks}/>
                 </div>
                 <div className='grid-item__two grid-item'>
-                    <Progress />
+                    <Progress tasks={props.tasks} />
                 </div>
                 <div className='grid-item__three grid-item'>
-                    <FinishedTasks />
+                    <FinishedTasks 
+                    tasks={props.tasks} 
+                    setTasks={props.setTasks} 
+                    donefunc={props.donefunc} 
+                    deleteTask={props.deleteTask}
+                    showMenu={props.showMenu} 
+                    setShowMenu={props.setShowMenu} 
+                    handleOutsideClick={props.handleOutsideClick}
+                    />
                 </div>
             </div>
         </div>
