@@ -341,3 +341,75 @@ p{
 .website-img:hover{
   cursor: pointer;
 }
+
+.mostClicks{
+  padding: 6px 12px;
+}
+
+.QuoteOfDay{
+  margin: 12px;
+}
+
+.mostClicksSite{
+  background-color: white;
+  border-radius: 12px;
+  width: 25%;
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.height{
+  height: 17vh;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.icon-mostclicks img{
+  height: 50px;
+  width: 50px;
+  margin-bottom: -10px;
+}
+
+.clicks{
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.mostClicksSite:hover{
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Barcelony Signature";
+  src: url("https://fonts.googleapis.com/css?family=Tangerine");
+}
+
+.quote div{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.3rem;
+  align-items: center;
+  font-style:italic;
+}
+
+.quote{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border-radius: 20px;
+  margin: 30px;
+  padding: 20px;
+}
+.quoteOfDay{
+  background: rgb(205, 243, 255);
+}
+
+.flex-favWebsites{
+  display: flex;
+  flex-wrap: wrap;
+  height: 85%;
+  width: 98%;
+}

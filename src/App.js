@@ -84,7 +84,7 @@ export default function App() {
       <Header />
       <Navigation account={accounts} />
       <Routes>
-        <Route path="/Dashboard" element={<Dashboard tasks={sortedTasks} donefunc={doneFunc} setTasks={setTasks} />}>
+        <Route path="/Dashboard" element={<Dashboard tasks={sortedTasks} donefunc={doneFunc} setTasks={setTasks} websites={sortedWebsites} setWebsites={setWebsites}/>}>
           <Route path="/Dashboard/All" element={<All tasks={sortedTasks} donefunc={doneFunc} handleOutsideClick={handleOutsideClick} showMenu={showMenu} deleteTask={deleteTask} setTasks={setTasks}/>} />
           <Route path="/Dashboard/School" element={<School tasks={sortedTasks} donefunc={doneFunc} handleOutsideClick={handleOutsideClick} showMenu={showMenu} deleteTask={deleteTask} setTasks={setTasks}/>} />
           <Route path="/Dashboard/Social" element={<Social tasks={sortedTasks} donefunc={doneFunc} handleOutsideClick={handleOutsideClick} showMenu={showMenu} deleteTask={deleteTask} setTasks={setTasks}/>} />

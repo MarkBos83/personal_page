@@ -14,7 +14,7 @@ export default function Websites(props) {
                 <div className='grid-item__two grid-item'>
                     <MostClicks websites={props.websites} setWebsites={props.setWebsites} />
                 </div>
-                <div className='grid-item__three grid-item'>
+                <div className='grid-item__three grid-item quoteOfDay'>
                     <QuoteofDay />
                 </div>
             </div>

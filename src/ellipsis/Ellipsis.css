@@ -21,7 +21,8 @@
     border: 1px solid gray;
     border-radius: 5px;
     box-shadow: 0 0 10px gray;
-    right: 4px;
+    right: 20px;
+    top:0
 }
 
 .ellipsis-menu-item {
