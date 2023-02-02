@@ -115,46 +115,57 @@
                     "category": "social"
                 }
             ],
-            "clicks": [
+            "website": [
                 {
-                    "ID": "1",
-                    "amountOfClicks": "0",
-                    "accountusername": "MarkBos",
-                    "websitename": "Google"
+                    "name": "Google",
+                    "url": "https://www.google.com",
+                    "description": "Search engine and technology company",
+                    "icon": "https://www.google.com/favicon.ico",
+                    "clicks": "0"
                 },
                 {
-                    "ID": "2",
-                    "amountOfClicks": "0",
-                    "accountusername": "MarkBos",
-                    "websitename": "Facebook"
+                    "name": "Facebook",
+                    "url": "https://www.facebook.com",
+                    "description": "Social networking platform",
+                    "icon": "https://www.facebook.com/favicon.ico",
+                    "clicks": "0"
                 },
                 {
-                    "ID": "3",
-                    "amountOfClicks": "0",
-                    "accountusername": "MarkBos",
-                    "websitename": "Twitter"
+                    "name": "Twitter",
+                    "url": "https://www.twitter.com",
+                    "description": "Microblogging and social networking service",
+                    "icon": "https://www.twitter.com/favicon.ico",
+                    "clicks": "0"
+                },
+                {
+                    "name": "Amazon",
+                    "url": "https://www.amazon.com",
+                    "description": "E-commerce platform",
+                    "icon": "https://www.amazon.com/favicon.ico",
+                    "clicks": "0"
+                },
+                {
+                    "name": "YouTube",
+                    "url": "https://www.youtube.com",
+                    "description": "Video sharing platform",
+                    "icon": "https://www.youtube.com/favicon.ico",
+                    "clicks": "0"
+                },
+                {
+                    "name": "Netflix",
+                    "url": "https://www.netflix.com",
+                    "description": "Video streaming service",
+                    "icon": "https://www.netflix.com/favicon.ico",
+                    "clicks": "0"
+                },
+                {
+                    "name": "Instagram",
+                    "url": "https://www.instagram.com",
+                    "description": "Photo and video sharing social network",
+                    "icon": "https://www.instagram.com/favicon.ico",
+                    "clicks": "0"
                 }
             ]
-        }
-    ],
-    "website": [
-        {
-            "name": "Google",
-            "url": "https://www.google.com",
-            "description": "Search engine and technology company",
-            "icon": "https://www.google.com/favicon.ico"
-        },
-        {
-            "name": "Facebook",
-            "url": "https://www.facebook.com",
-            "description": "Social networking platform",
-            "icon": "https://www.facebook.com/favicon.ico"
-        },
-        {
-            "name": "Twitter",
-            "url": "https://www.twitter.com",
-            "description": "Microblogging and social networking service",
-            "icon": "https://www.twitter.com/favicon.ico"
         }
     ]
 }

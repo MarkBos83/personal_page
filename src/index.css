@@ -310,3 +310,34 @@ p{
   flex-direction: column;
   align-items: center;
 }
+
+.notasksfinished{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.favwebsites{
+  overflow: auto;
+  height: 450px;
+}
+
+.website{
+  margin-left: 0;
+  height: 48px;
+  width: 93%;
+}
+.website-img img{
+  height: 24px;
+}
+.fav{
+  margin-right: -10px;
+}
+
+.website-name:hover{
+  cursor: pointer;
+}
+
+.website-img:hover{
+  cursor: pointer;
+}

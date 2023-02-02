@@ -22,8 +22,8 @@ export default function SingleTask(props) {
     if (deadline.toDateString() === today.toDateString()) {
       const timeDiff = deadline.getTime() - today.getTime();
       const diffHours = Math.floor(timeDiff / (1000 * 3600));
-      if(diffHours===0){
-        return(`${Math.floor(timeDiff/(1000*60))} minutes left`)
+      if (diffHours === 0) {
+        return (`${Math.floor(timeDiff / (1000 * 60))} minutes left`)
       }
       return `${diffHours} hours left`;
     }
@@ -38,7 +38,7 @@ export default function SingleTask(props) {
     setTimeout(() => {
       props.donefunc(props.name, props.deadlineDate);
       setChecked(false)
-    }, 500);
+    }, 250);
   }
 
   return (
@@ -60,13 +60,13 @@ export default function SingleTask(props) {
         deadlineDate={props.deadlineDate}
         deadlineTime={props.deadlineTime}
         name={props.name}
-        showMenu={props.showMenu} 
-        setShowMenu={props.setShowMenu} 
+        showMenu={props.showMenu}
+        setShowMenu={props.setShowMenu}
         handleOutsideClick={props.handleOutsideClick}
-        deleteTask={props.deleteTask} 
+        deleteTask={props.deleteTask}
         category={props.category}
         tasks={props.tasks}
-        setTasks={props.setTasks}/>
+        setTasks={props.setTasks} />
       </div>
     </div>
   )

@@ -9,7 +9,6 @@ import Navigation from './Main/Navigation';
 import Dashboard from './pages/Dashboard';
 import Tasks from './pages/Tasks';
 import Websites from './pages/Websites';
-import Something from './pages/Something';
 
 import All from './pages/tasks/categories/All'
 import Home from './pages/tasks/categories/Home'
@@ -20,19 +19,17 @@ import Social from './pages/tasks/categories/Social'
 export default function App() {
   const [tasks, setTasks] = useState([])
   const [websites, setWebsites] = useState([])
-  // const [clicks, setClicks] = useState([])
   const [accounts, setAccounts] = useState([])
   const [sortedTasks, setSortedTasks] = useState([]);
   const [showMenu, setShowMenu] = useState(false);
-
+  const [sortedWebsites, setSortedWebsites] = useState([])
 
   useEffect(() => {
     fetch("./../../../mockData.json")
       .then((response) => response.json())
       .then((data) => {
         setTasks(data.userdata[0].task)
-        setWebsites(data.website)
-        // setClicks(data.userdata[0].clicks)
+        setWebsites(data.userdata[0].website)
         setAccounts(data.userdata[0].account)
       })
   }, [])
@@ -48,9 +45,17 @@ export default function App() {
     return deadlineA - deadlineB;
   };
 
+  const sortByClicks = (a, b) => {
+    return b.clicks - a.clicks;
+  }
+
   useEffect(() => {
     setSortedTasks([...tasks].sort(sortByDeadlineDate));
   }, [tasks]);
+
+  useEffect(()=>{
+    setSortedWebsites([...websites].sort(sortByClicks));
+  }, [websites]);
 
   function doneFunc(name, deadlineDate) {
     const index = tasks.findIndex(task => task.name === name && task.deadlineDate === deadlineDate);
@@ -95,8 +100,7 @@ export default function App() {
           <Route path="/Tasks/Misc" element={<Misc tasks={sortedTasks} donefunc={doneFunc} handleOutsideClick={handleOutsideClick} showMenu={showMenu} deleteTask={deleteTask} setTasks={setTasks}/>} />
           <Route path="/Tasks" exact element={<Navigate to="/Tasks/All" />} />
         </Route>
-        <Route path="/Websites" element={<Websites websites={websites} />} />
-        <Route path="/Something" element={<Something />} />
+        <Route path="/Websites" element={<Websites websites={sortedWebsites} setWebsites={setWebsites}/>} />
         <Route path="/" exact element={<Navigate to="/Dashboard/All" />} />
       </Routes>
     </main>

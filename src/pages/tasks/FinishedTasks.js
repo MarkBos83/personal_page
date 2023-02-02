@@ -7,7 +7,13 @@ export default function FinishedTasks(props) {
     const handleClick = (name, deadlineDate) => {
         setTimeout(() => {
             props.donefunc(name, deadlineDate);
-        }, 500);
+        }, 250);
+    }
+
+    function noTasks(){
+        if (props.tasks.filter(task => task.state === 'done').length===0){
+            return (<p className='noTasks'>no finished tasks</p>)
+        }
     }
 
     return (
@@ -38,6 +44,7 @@ export default function FinishedTasks(props) {
                         </div>
                     </div>
                 )}
+                <div className='notasksfinished'>{noTasks()}</div>
             </div>
         </div>
     )
