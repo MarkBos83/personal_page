@@ -9,7 +9,7 @@ export default function Websites(props) {
             <h1>Websites</h1>
             <div className='grid-container'>
                 <div className='grid-item__one grid-item'>
-                    <FavWebsites websites={props.websites} setWebsites={props.setWebsites}/>
+                    <FavWebsites websites={props.websites} setWebsites={props.setWebsites} deleteWebsite={props.deleteWebsite} />
                 </div>
                 <div className='grid-item__two grid-item'>
                     <MostClicks websites={props.websites} setWebsites={props.setWebsites} />

@@ -319,7 +319,7 @@ p{
 
 .favwebsites{
   overflow: auto;
-  height: 450px;
+  height: 380px;
 }
 
 .website{
@@ -344,6 +344,7 @@ p{
 
 .mostClicks{
   padding: 6px 12px;
+  width: 100%;
 }
 
 .QuoteOfDay{
@@ -353,7 +354,7 @@ p{
 .mostClicksSite{
   background-color: white;
   border-radius: 12px;
-  width: 25%;
+  width: 250%;
   margin: 12px;
   display: flex;
   flex-direction: column;
@@ -412,4 +413,47 @@ p{
   flex-wrap: wrap;
   height: 85%;
   width: 98%;
+  height: 140px;
+}
+
+.dash-favwebsites{
+  padding-top: 15px;
+  padding-right: 25px;
+  width: 100px;
+}
+
+
+.dash-img-web img{
+  width: 30px;
+}
+
+.flex-seeAll{
+  display:flex;
+  justify-content: space-between;
+}
+
+.right-side{
+  padding-right: 60px;
+  padding-top: 5px;
+}
+
+.noWebsites{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.noWebsites p{
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.dash-favwebsites:hover{
+  cursor:pointer;
+}
+
+.username{
+  font-weight: 700;
 }

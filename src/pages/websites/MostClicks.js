@@ -10,9 +10,15 @@ export default function MostClicks(props) {
 
     const clickedCounter = (website) => {
         const index = props.websites.findIndex(websitesingle => websitesingle.name === website);
-        const updatedWebsites=props.websites
-        updatedWebsites[index].clicks+=1
+        const updatedWebsites = props.websites
+        updatedWebsites[index].clicks += 1
         props.setWebsites(updatedWebsites)
+    }
+
+    function noWebsite() {
+        if (props.websites.length === 0) {
+            return (<p className=''>no websites</p>)
+        }
     }
 
     return (
@@ -22,8 +28,8 @@ export default function MostClicks(props) {
                 {props.websites.map((website, index) => {
                     if (index < 4) {
                         return (
-                            <div key={website.name} className='mostClicksSite' onClick={()=>{goToWebsite(website.url);clickedCounter(website.name)}}>
-                                <span className='icon-mostclicks'><img src={website.icon}/></span>
+                            <div key={website.name} className='mostClicksSite' onClick={() => { goToWebsite(website.url); clickedCounter(website.name) }}>
+                                <span className='icon-mostclicks'><img src={website.icon} /></span>
                                 <p className='clicks'>{website.clicks}</p>
                             </div>
                         )
@@ -31,6 +37,7 @@ export default function MostClicks(props) {
                     return (null)
                 }
                 )}
+                <div className='noWebsites'>{noWebsite()}</div>
             </div>
         </div>
     )

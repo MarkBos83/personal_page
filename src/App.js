@@ -79,6 +79,11 @@ export default function App() {
     setTasks(tasks.filter(task => task !== tasks[index]));
   }
 
+  const deleteWebsite = (name) => {
+    const index = websites.findIndex(website => website.name === name);
+    setWebsites(websites.filter(website => website !== websites[index]));
+  }
+
   return (
     <main onClick={() => handleOutsideClick()}>
       <Header />
@@ -100,7 +105,7 @@ export default function App() {
           <Route path="/Tasks/Misc" element={<Misc tasks={sortedTasks} donefunc={doneFunc} handleOutsideClick={handleOutsideClick} showMenu={showMenu} deleteTask={deleteTask} setTasks={setTasks}/>} />
           <Route path="/Tasks" exact element={<Navigate to="/Tasks/All" />} />
         </Route>
-        <Route path="/Websites" element={<Websites websites={sortedWebsites} setWebsites={setWebsites}/>} />
+        <Route path="/Websites" element={<Websites websites={sortedWebsites} setWebsites={setWebsites} deleteWebsite={deleteWebsite} />} />
         <Route path="/" exact element={<Navigate to="/Dashboard/All" />} />
       </Routes>
     </main>

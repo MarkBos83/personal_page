@@ -15,7 +15,7 @@ export default function Navigation(props) {
             </div>
             <div className='logo'>
                 <img src={logo} alt='' />
-                <div>{props.account.username}</div>
+                <div className='username'>{props.account.username}</div>
             </div>
 
             <ul>

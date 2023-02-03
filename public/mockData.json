@@ -161,10 +161,38 @@
                 {
                     "name": "Instagram",
                     "url": "https://www.instagram.com",
-                    "description": "Photo and video sharing social network",
+                    "description": "Photo and video sharing social network",    
                     "icon": "https://www.instagram.com/favicon.ico",
                     "clicks": 0
-                }
+                },
+                {
+                    "name": "LinkedIn",
+                    "url": "https://www.linkedin.com",
+                    "description": "Business-oriented social networking platform",
+                    "icon": "https://www.linkedin.com/favicon.ico",
+                    "clicks": 0
+                    },
+                    {
+                    "name": "Microsoft",
+                    "url": "https://www.microsoft.com",
+                    "description": "Technology company and software manufacturer",
+                    "icon": "https://www.microsoft.com/favicon.ico",
+                    "clicks": 0
+                    },
+                    {
+                    "name": "Apple",
+                    "url": "https://www.apple.com",
+                    "description": "Technology company and manufacturer of consumer electronics",
+                    "icon": "https://www.apple.com/favicon.ico",
+                    "clicks": 0
+                    },
+                    {
+                    "name": "Spotify",
+                    "url": "https://www.spotify.com",
+                    "description": "Music streaming platform",
+                    "icon": "https://www.spotify.com/favicon.ico",
+                    "clicks": 0
+                    }
             ]
         }
     ]
