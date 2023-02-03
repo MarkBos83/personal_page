@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from 'react';
 
 export default function QuoteofDay(props) {
-    const [quoteIndex, setQuoteIndex] = useState(0);
     const [quotes, setQuotes] = useState([]);
+    let [number, setNumber] = useState(0)
 
+    function refreshQuote() {
+        setNumber(Math.floor(Math.random() * quotes.length));
+    }
+    
     useEffect(() => {
-        const today = new Date().toLocaleDateString();
-        const storedDate = localStorage.getItem('quoteDate');
-        if (!storedDate || storedDate !== today) {
-            localStorage.setItem('quoteDate', today);
-            setQuoteIndex(Math.floor(Math.random() * quotes.length));
-        }
-    }, [quotes]);
+        const timerId = setInterval(refreshQuote, 60000);
+        return function cleanup() {
+            clearInterval(timerId);
+        };
+    }, []);
 
     useEffect(() => {
         fetch("https://type.fit/api/quotes")
@@ -24,10 +26,10 @@ export default function QuoteofDay(props) {
 
     return (
         <div className='QuoteOfDay'>
-            <h2>Quote of the day</h2>
+            <h2>Quote of the minute</h2>
             <div className='quote'>
                 {quotes.length > 0 && (
-                    <div>{quotes[quoteIndex].text}</div>
+                    <div>{quotes[number].text}</div>
                 )}
             </div>
 

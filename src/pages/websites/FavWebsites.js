@@ -39,6 +39,8 @@ export default function FavWebsites(props) {
                                 website={website}
                                 websites={props.websites}
                                 setWebsites={props.setWebsites}
+                                handleOutsideClick={props.handleOutsideClick}
+                                showMenu={props.showMenu}
                             />
                         </div>
                     </div>

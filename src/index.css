@@ -222,8 +222,9 @@ button:hover{
 
 .progress{
   width: 100%;
-  height: 100%;
+  height: 98%;
   padding: 6px 12px;
+  overflow: hidden;
 }
 
 .progressblock{
@@ -456,4 +457,8 @@ p{
 
 .username{
   font-weight: 700;
+}
+
+@media (max-width:1200px){
+  
 }

@@ -105,7 +105,7 @@ export default function App() {
           <Route path="/Tasks/Misc" element={<Misc tasks={sortedTasks} donefunc={doneFunc} handleOutsideClick={handleOutsideClick} showMenu={showMenu} deleteTask={deleteTask} setTasks={setTasks}/>} />
           <Route path="/Tasks" exact element={<Navigate to="/Tasks/All" />} />
         </Route>
-        <Route path="/Websites" element={<Websites websites={sortedWebsites} setWebsites={setWebsites} deleteWebsite={deleteWebsite} />} />
+        <Route path="/Websites" element={<Websites websites={sortedWebsites} setWebsites={setWebsites} deleteWebsite={deleteWebsite} handleOutsideClick={handleOutsideClick} showMenu={showMenu} />} />
         <Route path="/" exact element={<Navigate to="/Dashboard/All" />} />
       </Routes>
     </main>
